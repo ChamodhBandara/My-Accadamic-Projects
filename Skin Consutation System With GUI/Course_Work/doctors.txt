@@ -1,0 +1,6 @@
+Name               :- chamodh
+Sur name                 :- Bandara
+Data of birth            :- 2000-12-07
+mobile phone number      :- 8888
+Medical Licence Number   :- 20
+specialisation Category  :- yh
