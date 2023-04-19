@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MobileCourseWork</string>
+    <string name="message">I confirm that I understand what plagiarism is and have read and understood the section on Assessment Offences in the Essential Information for Students. The work that I have submitted is entirely my own. Any work from other authors is duly referenced and acknowledged.</string>
+    <string name="submit">Submit</string>
+    <string name="enter_value">Enter an integer value:</string>
+    <string name="winOrlose">You Win</string>
+    <string name="win">You Win</string>
+    <string name="lose">You Lose</string>
+    <string name="UserWin">You Win</string>
+</resources>
