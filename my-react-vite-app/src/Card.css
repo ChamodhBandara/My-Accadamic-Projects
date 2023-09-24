@@ -1,0 +1,48 @@
+/* Card.css */
+.profile-card {
+    border: 1px solid #101010;
+    padding: 55px;
+    background-color: rgb(85, 179, 181);
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: contain;
+    align-items: center;
+    fill-opacity: inherit;
+  }
+  
+  .profile-name {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: #101010;
+  }
+  
+  .profile-description {
+    font-size: 1.1rem;
+    color: #f0eaea;
+  }
+  
+  .profile-bio {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
