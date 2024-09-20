@@ -9,7 +9,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.security.crypto.password.PasswordEncoder;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -31,8 +31,7 @@ public class EmployeeService {
     @Autowired
     private LeavePlanService leavePlanService;
 
-    @Autowired
-    private PasswordEncoder passwordEncoder;
+
 
 
     @Value("${spring.mail.username}")
@@ -47,15 +46,7 @@ public class EmployeeService {
         return employeeRepository.findAll();
     }
 
-    public void generateAndSetHashedPasswordsForAllEmployees() {
-        List<Employee> employees = getAllEmployees();
-        for (Employee employee : employees) {
-            String hashedPassword = passwordEncoder.encode(employee.getEmail());
-            employee.setPasswordHash(hashedPassword);
-            employeeRepository.save(employee);
 
-        }
-    }
 
     public Employee addEmployee(Employee employee) {
         // Save the employee

@@ -19,15 +19,9 @@ public class Employee {
     private String address;
     private String email;
 
-    private String passwordHash;
 
-    public String getPasswordHash() {
-        return passwordHash;
-    }
 
-    public void setPasswordHash(String passwordHash) {
-        this.passwordHash = passwordHash;
-    }
+
 
     public Employee(){
 

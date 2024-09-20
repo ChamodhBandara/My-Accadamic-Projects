@@ -7,6 +7,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import org.springframework.data.domain.Pageable;
@@ -18,6 +19,8 @@ import org.springframework.data.domain.Pageable;
 public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
+
+
 
     @GetMapping("/paged")
     public ResponseEntity<List<Employee>> getEmployeesPaged(
@@ -38,6 +41,7 @@ public class EmployeeController {
     // Get all employees
     @GetMapping
     public List<Employee> getAllEmployees() {
+
         return employeeService.getAllEmployees();
     }
 
